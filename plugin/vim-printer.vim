@@ -3,6 +3,8 @@
 " Author:      Abin Simon
 " Description: Easily print out variables in any language
 " License:     MIT
+" Update: Changed to support ic instead for each of use and debugging - have 
+"         nayvy installed for auto import
 " ============================================================================
 
 if exists('g:loaded_vim_printer') || &compatible
@@ -11,7 +13,7 @@ endif
 let g:loaded_vim_printer = 1
 
 let s:vim_printer_items_full = { 
-            \ 'python': 'print("{$}:", {$})', 
+            \ 'python': 'ic({$})', 
             \ 'javascript': 'console.log("{$}:", {$})',
             \ 'javascript.jsx': 'console.log("{$}:", {$})',
             \ 'typescript': 'console.log("{$}:", {$})',
