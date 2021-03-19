@@ -25,6 +25,11 @@ let s:vim_printer_items_full = {
             \ 'bash': 'echo "{$}: " "${$}"',
             \ 'zsh': 'echo "{$}: " "${$}"',
             \ 'f77': 'write(6,*)"{$}: ", {$}',
+            \ 'java': 'System.out.println("{$}: " + {$});',
+            \ 'lua': 'print("{$}: ", {$})',
+            \ 'swift': 'print("{$}: ", {$})',
+            \ 'php': 'print {$}: “,${$};',
+            \ 'cpp': 'std::cout << "{$}: " << {$} << std::endl;',
             \ 'f90': 'write(6,*)"{$}: ", {$}' 
             \ }
 
